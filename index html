@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfumes Exclusivos</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+        h1, h2, p {
+            margin-bottom: 15px;
+        }
+        /* Encabezado */
+        .header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        /* Contenedor principal */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        /* Tarjetas de perfumes */
+        .perfume-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 20px;
+        }
+        .perfume-card {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .perfume-card:hover {
+            transform: scale(1.05);
+        }
+        .perfume-card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-content {
+            padding: 20px;
+            text-align: center;
+        }
+        .card-content h2 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .card-content p {
+            font-size: 1rem;
+            color: #777;
+            line-height: 1.6;
+        }
+        .price {
+            font-size: 1.2rem;
+            color: #333;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        /* Botón */
+        .buy-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .buy-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="header">
+        <h1>Perfumes Exclusivos</h1>
+        <p>Explora nuestra colección de fragancias de lujo</p>
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Tarjetas de perfumes -->
+        <div class="perfume-cards">
+            <!-- Tarjeta 1 -->
+            <div class="perfume-card">
+                <img src="https://via.placeholder.com/300x400" alt="Perfume 1">
+                <div class="card-content">
+                    <h2>Perfume Elegance</h2>
+                    <p>Una fragancia clásica y sofisticada con notas de vainilla y madera de sándalo.</p>
+                    <p class="price">$85.00</p>
+                    <a href="#" class="buy-button">Comprar</a>
+                </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="perfume-card">
+                <img src="https://via.placeholder.com/300x400" alt="Perfume 2">
+                <div class="card-content">
+                    <h2>Perfume Serenity</h2>
+                    <p>Un aroma fresco y floral que inspira tranquilidad y elegancia.</p>
+                    <p class="price">$95.00</p>
+                    <a href="#" class="buy-button">Comprar</a>
+                </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="perfume-card">
+                <img src="https://via.placeholder.com/300x400" alt="Perfume 3">
+                <div class="card-content">
+                    <h2>Perfume Intense</h2>
+                    <p>Fragancia intensa y duradera con una mezcla de cítricos y especias orientales.</p>
+                    <p class="price">$110.00</p>
+                    <a href="#" class="buy-button">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
